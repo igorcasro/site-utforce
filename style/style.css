@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Myriad Regular';
+    src: url(../fonts/myriad-pro/MYRIADPRO-REGULAR.woff);
+}
+
+@font-face {
+    font-family: 'Myriad Bold';
+    src: url(../fonts/myriad-pro/MYRIADPRO-BOLD.woff);
+}
+
+@font-face {
+    font-family: 'Myriad Light';
+    src: url(../fonts/myriad-pro/MyriadPro-Light.woff);
+}
+
+@font-face {
+    font-family: 'Kiye Sans';
+    src: url(../fonts/kiye-sans/Kiye-Sans.ttf);
+}
+
+/*
+Cores do site
+#DA0039
+#A62145
+#732E40
+#40262D
+#363434
+*/
+
+:root {
+    --cor-0: #DA0039;
+    --cor-1: #A62145;
+    --cor-2: #732E40;
+    --cor-3: #40262D;
+    --cor-4: #363434;
+
+    --fonte-padrao: 'Kiye Sans', Arial, sans-serif;
+    --fonte-destaque-regular: 'Myriad Regular', sans-serif;
+    --fonte-destaque-bold: 'Myriad Bold', sans-serif;
+    --fonte-destaque-ligh: 'Myriad Light', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: var(--cor-4);
+}
+
+body {
+    background-color: black;
+    font-family: var(--fonte-padrao);
+}
+
+.desktop-menu {
+    background-color: var(--cor-4);
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border-radius: 15px;
+}
+  
+.desktop-menu > a {
+    background-color: rgba(202, 12, 63, 0.3);
+    color: white;
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
+}
+
+.desktop-menu > a:hover {
+    background-color: rgba(218, 00, 57);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0);
+}
+
+main {
+    flex: 2;
+}
+
+/* Aguardar conhecimento de JS
+ @media (max-width: 768px) {
+   .desktop-menu {
+      display: none;
+    }
+    
+   .mobile-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+   .mobile-menu > a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 0;
+    }
+}  
+*/
+
+.home {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    
+}
+
+.o-projeto {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.o-projeto h2 {
+    padding: 10px;
+    font-family: var(--fonte-destaque-bold);
+    font-size: 3em;
+    text-shadow: 1px 1px 2px var(--cor-0);
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: 3px -1px 1px var(--cor-1);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.o-projeto p {
+    /* margin: 0 20vh; */
+    margin: 0px 20px;
+    padding: 10px 40px;
+    text-align: justify;
+    font-family: var(--fonte-destaque-regular);
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: 4px 4px 1px var(--cor-1);
+    border-radius: 20px;
+}
+
+.imagem-1 {
+    background-image: url(../images/carro-1-transparencia-10.JPG);
+    background-size: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-1 img, source {
+    max-width: 100%;
+    height: auto;
+    border-radius: 60px;
+    
+}
