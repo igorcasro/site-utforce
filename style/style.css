@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Fontes */
 @font-face {
     font-family: 'Myriad Regular';
     src: url(../fonts/myriad-pro/MYRIADPRO-REGULAR.woff);
@@ -20,15 +21,7 @@
     src: url(../fonts/kiye-sans/Kiye-Sans.ttf);
 }
 
-/*
-Cores do site
-#DA0039
-#A62145
-#732E40
-#40262D
-#363434
-*/
-
+/* Cores do site */
 :root {
     --cor-0: #DA0039;
     --cor-1: #A62145;
@@ -39,14 +32,14 @@ Cores do site
     --fonte-padrao: 'Kiye Sans', Arial, sans-serif;
     --fonte-destaque-regular: 'Myriad Regular', sans-serif;
     --fonte-destaque-bold: 'Myriad Bold', sans-serif;
-    --fonte-destaque-ligh: 'Myriad Light', sans-serif;
+    --fonte-destaque-light: 'Myriad Light', sans-serif;
 }
 
+/* Reset e estilos globais */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     color: white;
-    background-color: var(--cor-4);
 }
 
 body {
@@ -54,8 +47,9 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+/* Menu desktop */
 .desktop-menu {
-    background-color: var(--cor-4);
+    background-color: transparent;
     position: fixed;
     top: 10px;
     left: 20px;
@@ -66,9 +60,9 @@ body {
     height: 60px;
     border-radius: 15px;
 }
-  
-.desktop-menu > a {
-    background-color: rgba(202, 12, 63, 0.3);
+
+.desktop-menu a {
+    background-color: rgba(202, 12, 63, 0.85);
     color: white;
     flex: 1;
     margin: 0 10px;
@@ -76,11 +70,13 @@ body {
     justify-content: center;
     align-items: center;
     width: 20px;
-    height: 40px;
+    height: 50px;
     border-radius: 15px;
     text-decoration: none;
     font-weight: bold;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
+    font-family: var(--fonte-destaque-bold);
+    font-size: 1.3em;
 }
 
 .desktop-menu > a:hover {
@@ -88,30 +84,10 @@ body {
     box-shadow: 5px 5px 20px rgba(0, 0, 0);
 }
 
+/* Conteúdo principal */
 main {
     flex: 2;
 }
-
-/* Aguardar conhecimento de JS
- @media (max-width: 768px) {
-   .desktop-menu {
-      display: none;
-    }
-    
-   .mobile-menu {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-   .mobile-menu > a {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 10px 0;
-    }
-}  
-*/
 
 main > div {
     height: 100vh;
@@ -138,12 +114,11 @@ main > div {
     text-shadow: 1px 1px 2px var(--cor-0);
     background-color: rgba(255, 255, 255, 0.02);
     box-shadow: 3px -1px 1px var(--cor-1);
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 0 0;
 }
 
 .o-projeto p {
-    /* margin: 0 20vh; */
-    margin: 0px 20px;
+    margin: 0 20px;
     padding: 10px 40px;
     text-align: justify;
     font-family: var(--fonte-destaque-regular);
@@ -153,6 +128,7 @@ main > div {
     border-radius: 20px;
 }
 
+/* Imagens */
 .imagem-1 {
     background-image: url(../images/carro-1-transparencia-10.JPG);
     background-size: 100%;
@@ -166,5 +142,4 @@ main > div {
     max-width: 100%;
     height: auto;
     border-radius: 60px;
-    
 }
