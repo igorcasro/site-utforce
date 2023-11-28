@@ -113,11 +113,13 @@ main {
 }  
 */
 
+main > div {
+    height: 100vh;
+}
+
 .home {
     display: flex;
     justify-content: flex-end;
-    height: 100vh;
-    
 }
 
 .o-projeto {
