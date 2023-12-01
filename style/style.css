@@ -47,13 +47,19 @@ body {
     font-family: var(--fonte-padrao);
 }
 
+main > section{
+    background-image: url(../images/background-black.png);
+    background-size: 100%;
+    width: 100%;
+}
+
 /* Menu desktop */
 .desktop-menu {
     background-color: transparent;
     position: fixed;
     top: 10px;
-    left: 20px;
-    right: 20px;
+    left: 100px;
+    right: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -89,13 +95,13 @@ main {
     flex: 2;
 }
 
-main > div {
+/* main > div {
     height: 100vh;
-}
+} */
 
-.home {
+section {
+    height: 100vh;
     display: flex;
-    justify-content: flex-end;
 }
 
 .o-projeto {
@@ -113,7 +119,7 @@ main > div {
     font-size: 3em;
     text-shadow: 1px 1px 2px var(--cor-0);
     background-color: rgba(255, 255, 255, 0.02);
-    box-shadow: 3px -1px 1px var(--cor-1);
+    box-shadow: 7px -7px 7px var(--cor-1);
     border-radius: 20px 20px 0 0;
 }
 
@@ -122,9 +128,9 @@ main > div {
     padding: 10px 40px;
     text-align: justify;
     font-family: var(--fonte-destaque-regular);
-    font-size: 1em;
+    font-size: 1.15em;
     background-color: rgba(255, 255, 255, 0.02);
-    box-shadow: 4px 4px 1px var(--cor-1);
+    box-shadow: 7px 7px 7px var(--cor-1);
     border-radius: 20px;
 }
 
@@ -132,6 +138,7 @@ main > div {
 .imagem-1 {
     background-image: url(../images/carro-1-transparencia-10.JPG);
     background-size: 100%;
+    height: 100%;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -143,3 +150,37 @@ main > div {
     height: auto;
     border-radius: 60px;
 }
+
+.menu-areas > div {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+}
+
+.menu-areas h3 {
+    padding: 10px;
+    font-family: var(--fonte-destaque-bold);
+    font-size: 3em;
+    text-shadow: 1px 1px 2px var(--cor-0);
+    border-radius: 20px 20px 0 0;
+}
+
+.menu-areas p {
+    margin: 0 20px;
+    padding: 10px 40px;
+    text-align: justify;
+    font-family: var(--fonte-destaque-regular);
+    font-size: 1.15em;
+    border-radius: 20px;
+}
+
+.areas, .mvv {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
