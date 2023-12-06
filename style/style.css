@@ -100,7 +100,7 @@ main {
     height: 100vh;
 } */
 
-section {
+main section {
   height: 100vh;
   display: flex;
 }
