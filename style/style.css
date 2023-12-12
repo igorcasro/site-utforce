@@ -88,7 +88,7 @@ main > section {
 }
 
 .desktop-menu > a:hover {
-  background-color: #96181A;
+  background-color: #96181a;
   box-shadow: 5px 5px 5px rgba(0, 0, 0);
 }
 
@@ -201,7 +201,9 @@ main section {
 }
 
 .ultimo {
-  padding-right: 20vw;
+  width: 100%;
+  min-width: 100vw;
+  margin-left: calc(-100vw + 100%);
 }
 
 .diretor {
@@ -284,3 +286,25 @@ main section {
   font-size: 1em;
   padding: 50px;
 }
+
+.a-competicao {
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/backgrounds/bg-carro.png");
+  background-size: 100%;
+}
+
+/* .a-competicao > div {
+  height: 100vh;
+}
+
+#imagem-cima {
+  background-image: url("../images/backgrounds/bg-carro-cima.png");
+  background-size: 100%;
+}
+
+#imagem-baixo {
+  background-image: url("../images/backgrounds/bg-carro-baixo.png");
+  background-size: 100%;
+} */
