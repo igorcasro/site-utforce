@@ -21,6 +21,11 @@
   src: url(../fonts/kiye-sans/Kiye-Sans.ttf);
 }
 
+@font-face {
+  font-family: "Formula1 Bold";
+  src: url(../fonts/formula1-display-bold/Formula1-Bold_web_0.ttf);
+}
+
 /* Cores do site */
 :root {
   --cor-0: #da0039;
@@ -30,6 +35,7 @@
   --cor-4: #363434;
 
   --fonte-padrao: "Kiye Sans", Arial, sans-serif;
+  --fonte-formula-1-bold: "Formula1 Bold";
   --fonte-destaque-regular: "Myriad Regular", sans-serif;
   --fonte-destaque-bold: "Myriad Bold", sans-serif;
   --fonte-destaque-light: "Myriad Light", sans-serif;
@@ -173,7 +179,7 @@ main section {
   width: 650px;
   height: auto;
   text-align: center;
-  font-family: var(--fonte-destaque-bold);
+  font-family: var(--fonte-formula-1-bold);
   font-size: 5em;
   text-shadow: 3px 3px 2px black;
 }
@@ -190,7 +196,7 @@ main section {
   z-index: 0;
   position: relative;
   margin-top: 10vh;
-  background-image: url(../images/background-black.png);
+  background-image: url(../images/backgrounds/background-black.png);
   background-size: 100%;
   width: 100%;
   height: 70vh;
@@ -249,8 +255,8 @@ main section {
 }
 
 .box-dados h3 {
-  font-family: var(--fonte-destaque-regular);
-  font-size: 1.5em;
+  font-family: var(--fonte-formula-1-bold);
+  font-size: 1.1em;
 }
 
 .fala-diretor {
@@ -288,23 +294,21 @@ main section {
 }
 
 .a-competicao {
-  height: 300vh;
+  padding: 80px 0;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  background-image: url("../images/backgrounds/bg-carro.png");
-  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/backgrounds/background-black.png);
+  background-size: 100% auto;
 }
 
 /* .a-competicao > div {
   height: 100vh;
-}
-
-#imagem-cima {
-  background-image: url("../images/backgrounds/bg-carro-cima.png");
-  background-size: 100%;
-}
-
-#imagem-baixo {
-  background-image: url("../images/backgrounds/bg-carro-baixo.png");
-  background-size: 100%;
 } */
+
+#imagem {
+  min-height: 2000px;
+  background-image: url(../images/backgrounds/bg-carro.png);
+  background-size: 100%;
+}
