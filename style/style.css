@@ -45,7 +45,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: white;
 }
 
@@ -102,10 +102,6 @@ main > section {
 main {
   flex: 2;
 }
-
-/* main > div {
-    height: 100vh;
-} */
 
 main section {
   height: 100vh;
@@ -300,7 +296,7 @@ main section {
   justify-content: center;
   align-items: center;
   background-image: url(../images/backgrounds/background-black.png);
-  background-size: 100% auto;
+  background-size: 90% auto;
 }
 
 /* .a-competicao > div {
@@ -308,7 +304,56 @@ main section {
 } */
 
 #imagem {
-  min-height: 2000px;
+  min-height: 1800px;
   background-image: url(../images/backgrounds/bg-carro.png);
   background-size: 100%;
+}
+
+.membros {
+  overflow-x: scroll;
+  background-color: var(--cor-0);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.membros > h2 {
+  font-family: var(--fonte-formula-1-bold);
+  font-size: 5em;
+  margin: 0 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.membro {
+  min-width: 200px;
+  margin: 0 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.membro:last-child {
+  padding-right: 20px;
+}
+
+.membro h3 {
+  font-family: var(--fonte-formula-1-bold);
+  font-size: 1.1em;
+}
+
+.membro p {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.membro > img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 40px;
 }
